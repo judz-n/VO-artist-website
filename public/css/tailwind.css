@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Agbalumo");
+@import url("https://fonts.googleapis.com/css?family=Alan%20Sans");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "valentine";
+  default: true;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+}
+
+@theme {
+  --font-sans: 'Alan Sans', 'Tahoma', sans-serif;
+  --font-big-cursive: 'Agbalumo', serif;
+
+
+  --color-muted-violet: #b78ebd;
+  --color-muted-purple: #a686ce;
+  --color-violet: #730275;
+  --color-light-lavender: #cf98ff;
+  --color-light-teal: #69dad6;
+  --color-near-white: #f6f3fa;
+  --color-near-black: #231223;
+}
+
+:root {
+  --color-base-content: #45001f;
+}
+
+@utility wave-bottom-1 {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: -0.3%;
+    height: 62px;
+    background-repeat: repeat no-repeat;
+    background-position: var(--wave-pos, 11vw bottom);
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 80' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 2 32.2291 3 51.5 5C104.5 11 200 25 300 39C400 53 500 66 600 61C700 55 800 31 900 18C987.526 3 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V80H1150C1100 80 1000 80 900 80C800 80 700 80 600 80C500 80 400 80 300 80C200 80 100 80 50 80H0V1.98128Z' fill='%23a686ce'/></svg>");
+  }
+
+  @variant max-md {
+    &::before { height: 31px; }
+  }
+}
+
+@utility wave-bottom-2 {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: -0.3%;
+    height: 80px;
+    background-repeat: repeat no-repeat;
+    background-position: var(--wave-pos, 35vw bottom);
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 80' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 2 32.2291 4 51.5 6C104.5 14 200 31 300 48C400 64 500 81 600 74C700 68 800 38 900 22C987.526 4 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V97H1150C1100 97 1000 97 900 97C800 97 700 97 600 97C500 97 400 97 300 97C200 97 100 97 50 97H0V1.98128Z' fill='%23b78ebd'/></svg>");
+  }
+
+  @variant max-md {
+    &::before { height: 31px; }
+  }
+}
+
+@utility text-section {
+  @apply text-3xl text-center text-shadow-sm/30 text-shadow-near-white font-bold py-4;
+
+  @variant max-md {
+    @apply text-2xl text-center text-shadow-2xs/10 text-shadow-near-white font-bold py-4;
+  }
+}

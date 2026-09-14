@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <title>Judy Nguyen - Artist Website</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <html data-theme="valentine"></html>
+    <script src="/js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  </head>
+  <body class="bg-near-white sm:text-lg">
+    <%- include('partials/header') %>
+
+    <!-- ADD ALT TEXT TO ALL MEDIA -->
+
+    <section id="home" class="block p-6 bg-muted-violet">
+      <h2 class="font-big-cursive text-3xl sm:text-4xl text-center text-near-white text-shadow-sm/30 text-shadow-near-black py-6">
+        Voice-over Artist and Singer based in Toronto
+      </h2>
+      <div class="grid grid-cols-3 max-md:grid-cols-1 gap-7 my-4">
+        <div class="justify-self-center">
+          <img src="/img/headshot.jpg" alt="Judy Nguyen headshot" width="400"/>
+        </div>
+
+        <div class="content-start col-span-2">
+          <h3 class="font-bold text-xl">Hi there! (˶ᵔᗜᵔ˶)ﾉﾞ</h3>
+          <br/>
+          <p>
+            My name is Judy, a graduate of the St. Lawrence College Music Theatre Performance 
+            program and voice actor who specializes in children's animation.
+            <br/><br/>
+            Need a youthful voice to play young characters that are full of wonder and innocence? 
+            Look no further! Need a wry voice to play teen characters with a hint of rebellion and 
+            sarcasm? And do they spontaneously break into song and dance as well? You got it! ദ്ദി(˵˙ᗜ˙˵)✧
+            <br/><br/>
+            <!--ADD STUFF ABOUT TINKER BELL INSPO N DREAM-->
+          </p>
+          <br />
+          <p class="font-bold">
+            Represented by 
+            <a class="link-neutral" href="https://oazinc.com/">OAZ</a>
+          </p>
+          <br/>
+          
+          <div class="inline-grid grid-cols-2 gap-2 max-md:grid-cols-1">
+            <div class="rounded-2xl justify-items-center w-fit bg-light-lavender p-4 shadow-xs/50 transition-shadow hover:shadow-md/50">
+              <p class="pb-2">Animation Demo</p>
+              <audio class="h-8" controls>
+                  <source src="/media/animation-demo.mp3" type="audio/mp3">
+              </audio>
+            </div>
+
+            <div class="rounded-2xl justify-items-center w-fit bg-light-lavender p-4 shadow-xs/50 transition-shadow hover:shadow-md/50">
+              <p class="pb-2">Commercial Demo</p>
+              <audio class="h-8" controls>
+                <source src="/media/commercial-demo.mp3" type="audio/mp3">
+              </audio>
+            </div>
+
+            <div class="rounded-2xl justify-items-center w-fit bg-light-lavender p-4 shadow-xs/50 transition-shadow hover:shadow-md/50">
+              <p class="pb-2">Vietnamese Demo</p>
+              <audio class="h-8" controls>
+                <source src="/media/vietnamese-demo.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDITS -->
+    <div id="credits" class="wave-bottom-1 h-17 bg-muted-violet"></div>
+    <section class="block px-6 bg-muted-purple">
+      <h2 class="text-section">✧ MY WORK ✧</h2>
+      <div class="flex flex-wrap justify-center gap-4 sm:py-4">
+        <iframe src="https://www.youtube.com/embed/XYA8sp0aXHg" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/KWRX2x1iDMY" allowfullscreen></iframe>
+      </div>      
+      <div class="grid justify-center py-4">
+        <table class="table sm:text-lg">
+          <tr>
+              <th class="bg-light-lavender/50 text-center" colspan="3">Animation</th>
+          </tr>
+          <tr class="bg-light-lavender/30">
+              <td>[TITLE TBA]</td>
+              <td>Various</td>
+              <td>Dir: Christopher Harris/ Super Sonics</td>
+          </tr>
+          <tr class="bg-light-lavender/30">
+              <td>SPARKLES MAGICAL MARKET</td>
+              <td>Muffi Buttersprinkles</td>
+              <td>Dir: Dee Shipley/ Spin Master</td>
+          </tr>
+          <tr>
+              <th class="bg-light-lavender/50 text-center" colspan="3">Commercial Voice-over</th>
+          </tr>
+          <tr class="bg-light-lavender/30">
+              <td>BARBIE MALIBU HOUSE</td>
+              <td>Actor</td>
+              <td>Dir: Gabrielle Harvey/ Mattel</td>
+          </tr>
+          <!-- <tr>
+              <th class="bg-light-lavender/50 text-center" colspan="3">Theatre</th>
+          </tr>
+          <tr class="bg-light-lavender/30">
+              <td>NINE THE MUSICAL</td>
+              <td>Little Guido</td>
+              <td>Dir: Alex Herzog/ St. Lawrence College</td>
+          </tr>
+          <tr class="bg-light-lavender/30">
+              <td>ROCKY HORROR SHOW</td>
+              <td>Narrator</td>
+              <td>Dir: Jennifer Walls/ St. Lawrence College</td>
+          </tr> -->
+        </table>
+      </div>
+
+      <div class="text-center py-4">
+        <a class="btn btn-soft" href="/img/resume.pdf" target="_blank">See my full resume here!</a>
+      </div>
+    </section>
+
+    <!-- HOME STUDIO -->
+    <div id="remote" class="wave-bottom-2 h-17 bg-muted-purple"></div>
+    <section class="block px-6 bg-muted-violet">
+      <h2 class="text-section">✧ HOME STUDIO ✧</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center pb-4">
+        <div class="grid grid-flow-col col-span-2 gap-4 justify-center max-md:hidden">
+          <img src="/img/booth-closeup.jpg" width="400"/>
+          <img src="/img/booth-whole-shot.jpg" width="400"/>
+          <img src="/img/home-boothie.jpg" width="400"/>
+        </div>
+        <div class="carousel carousel-center bg-light-lavender/30 rounded-box max-w-md space-x-4 p-4 md:hidden">
+          <div class="carousel-item">
+            <img src="/img/booth-closeup.jpg" width="300"/>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/booth-whole-shot.jpg" width="300"/>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/home-boothie.jpg" width="300"/>
+          </div>
+        </div>
+        <div class="px-6">
+          <p class="p-6">
+            Rode NT1-A
+            <br/>
+            Focusrite Scarlett 2i2
+            <br/>
+            Reaper
+            <br/>
+            Source Connect ID: 
+            <a class="link-neutral" href="https://source-elements.com/find/2d6c447a-7559-4057-a7f4-cb20fe187d9b" target="_blank">judy_nguyen</a>
+          </p>
+          <div class="rounded-2xl justify-items-center w-fit bg-light-lavender p-4 shadow-xs/50 transition-shadow hover:shadow-md/50">
+            <p class="pb-2">Raw Sample (<a href="/media/raw-sample.wav" target="_blank" class="link-neutral">Download here!</a>)</p>
+            <audio class="h-8" controls>
+              <source src="/media/raw-sample.wav" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <div id="gallery" class="wave-bottom-1 h-17 bg-muted-violet [--wave-pos:23vw_bottom]"></div>
+    <section class="block px-6 bg-muted-purple">
+      <h2 class="text-section">✧ SOCIAL GALLERY ✧</h2>
+      <div class="block py-4 max-sm:hidden" id="JFWebsiteWidget-01a088aa9db0700080d747a16f03f335bfa2"></div>
+      <script src="https://www.jotform.com/website-widgets/embed/01a088aa9db0700080d747a16f03f335bfa2"></script>
+
+      <div class="block sm:hidden" id="JFWebsiteWidget-01a088aa4ba87000859df2ec547cb341bba1"></div>
+      <script src="https://www.jotform.com/website-widgets/embed/01a088aa4ba87000859df2ec547cb341bba1"></script>
+    </section>
+
+    <!-- CONTACT -->
+    <div id="contact" class="wave-bottom-2 h-17 bg-muted-purple [--wave-pos:50vw_bottom]"></div>
+    <section class="block px-6 bg-muted-violet">
+      <h2 class="text-section">✧ LET'S GET IN TOUCH! ✧</h2>
+      <div class="pb-4 sm:py-4">
+        <div class="pb-4">
+          <p>
+            Interested in a collab? Or just wanna say hi? You can reach me 
+            through my email:
+            <br/>
+            <a class="link-neutral" href="mailto:judytramnguyen@gmail.com" target="_blank">judytramnguyen@gmail.com</a>
+          </p>
+        </div>
+        <div class="pb-4">
+          <p>
+            For voice work-related inquires, contact Jason Thomas at 
+            <a class="link-neutral" href="https://oazinc.com/">OAZ</a>:
+            <br/>
+            E: <a class="link-neutral" href="mailto:jason@oazinc.com">jason@oazinc.com</a>
+            <br/>
+            P: <a class="link-neutral" href="tel:+4168609933">+ 416 860 9933</a>
+          </p>
+        </div>
+        <p>Thank you for your interest!! ⸜(｡˃ ᵕ ˂)⸝♡</p>
+      </div>
+    </section>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>
