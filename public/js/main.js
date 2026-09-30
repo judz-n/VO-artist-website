@@ -9,3 +9,7 @@ document.addEventListener('play', function(e){
         }
     }
 }, true);
+
+import { inject } from '@vercel/analytics';
+ 
+inject();

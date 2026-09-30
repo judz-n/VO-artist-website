@@ -12,6 +12,7 @@
     "tw:build": "npx @tailwindcss/cli -i ./public/css/tailwind.css -o ./public/css/main.css --watch"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "ejs": "^6.0.1",
     "express": "^5.2.1"
   },
